@@ -1,4 +1,4 @@
-function bisection(f::Function, a, b, epsilon=1e-3)
+function bisection(f::Function, a, b, epsilon = 2.220446049250313e-16)
   f_a = f(a)
   while b - a > epsilon
     t = (a + b) / 2
